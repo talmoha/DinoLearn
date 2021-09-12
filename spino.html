@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>DinoKnows</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/fish.png" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <!-- Vendor CSS Files -->
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+        <!-- Template Main CSS File -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script>
+            var n=2;
+            function change()
+            {
+                document.getElementById("tri1").innerHTML='<div id="tri1"><img src="assets/images/tri'+n+'.gif" class="img-fluid" alt="" style="width:100%"></div>';
+                n++;
+            }
+
+            function change2()
+            {
+                document.getElementById("tri2").innerHTML='<div id="tri2"><img src="assets/images/tri'+n+'.gif" class="img-fluid" alt="" style="width:100%"></div>';
+                n++;
+            }
+
+            function togglePopup()
+            {
+                document.getElementById("popup-1").classList.toggle("active");
+            }
+        </script>
+
+        <audio id="spinoAudio" src="assets/audio/spino.mp3"></audio>
+
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(226, 245, 239); box-shadow: 1 0.125rem 5rem rgba(0, 0, 0, 0.075)">
+            <div class="container px-4 px-lg-5">
+                <img class="navbar-brand" src="assets/images/logo.png" width="70" height="70" href="#!">
+                <img class="navbar-brand" src="assets/images/title.png" width="180" height="50" href="#!">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html" style="font-size: 19px; font-weight: 400;">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html" style="font-size: 19px; font-weight: 400;">About</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="index.html" style="font-size: 19px; font-weight: 400;">Learn</a></li>
+                        <li class="nav-item"><a class="getstarted nav-link" href="about.html" style="color: #fff;padding: 10px 25px;margin-left: 370px;">Start Learning</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar " style="background-color: rgb(188, 218, 208); ">
+        </nav>
+
+        <div> 
+            <img src="assets/images/frame2.jpg" width="160" height="70">
+            <img src="assets/images/frame2.jpg" width="200" height="70">
+            <img src="assets/images/frame2.jpg" width="200" height="70">
+            <img src="assets/images/frame2.jpg" width="200" height="70">
+            <img src="assets/images/frame2.jpg" width="200" height="70">
+            <img src="assets/images/frame2.jpg" width="200" height="70">
+            <img src="assets/images/frame2.jpg" width="150" height="70">
+        </div>
+
+        <nav class="navbar " style="background-color: rgb(255, 255, 255);">
+        </nav>
+
+        <nav class="navbar " type="button" style="background-color: rgb(255, 255, 255); padding-left: 120px;padding-bottom: 0px;" onClick="location.href='index.html'">
+            <div><p><i class="arrow left"></i>      BACK</p>
+            </div>
+        </nav>
+
+        <!-- ======= Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details" style="padding-top: 0px;">
+        <div class="container">
+  
+          <div class="row gy-6">
+  
+            <div class="col-lg-7 w3-content w3-display-container">
+                    <div type="button" onclick="togglePopup()" id="tri1"><img src="assets/images/spino.gif" class="img-fluid" alt="" style="width:100%"></div>
+                    
+                    <button class="w3-button w3-black w3-display-left" onclick="change()" style="top: 270px;">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="change()" style="top: 270px;">&#10095;</button>
+
+                    <div class="popup" id="popup-1">
+                        <div class="overlay"></div>
+                        <div class="content">
+                            <div class="close-btn" onclick="togglePopup()">&times;</div>
+                            <div id="tri2"><img src="assets/images/spino.gif" class="img-fluid" alt="" style="width:100%"></div>
+                    
+                            <button class="w3-button w3-black w3-display-left" onclick="change2()">&#10094;</button>
+                            <button class="w3-button w3-black w3-display-right" onclick="change2()">&#10095;</button>
+                        </div>
+                    </div>
+            </div>
+  
+            <div class="col-lg-5">
+              <div class="portfolio-info" style="background-color: rgb(164, 210, 120); padding-top: 16px;">
+                <h3 style="color: white;">SPINOSAURUS <button class="btn" style="padding: 0rem 0.5rem; top: 200px;max-height: 10px; padding-left: 50px;" type="submit" onclick="spinoPlay()"> 
+                    <i type="button" class="bi bi-volume-up" style="font-size: 2.5em; color: black;"></i>
+                </button>
+                    <div style="font-weight: 400; color: rgb(255, 255, 255);">(SPINE-uh-SORE-us) </div></h3>
+                <ul>
+                  <li style="color: white; font-size: 20px;"><strong style="color: black;">Size:</strong> 11-23 Ft. Tall / 50 Ft. Long</li>
+                  <li style="color: white; font-size: 20px;"><strong style="color: black;">Weight:</strong> 22,000 Lbs. / 9,980 Kg</li>
+                  <li style="color: white; font-size: 20px;"><strong style="color: black;">Diet:</strong> Carnivore </li>
+                  <li style="color: white; font-size: 20px;"><strong style="color: black;">Feature:</strong> Semi-aquatic</li>
+                </ul>
+              </div>
+
+              <div style="background-color: rgb(255, 255, 255); padding-top: 5px; display:inline-block; vertical-align:top">
+                <img src="assets/images/spinoSketelton.jpg" style="width: 60%; float: left; padding-left: 0px; padding-top: 10px; padding-right: 20px;">
+                <p style="color: white; font-size: 20px; color: black; padding-top: 50px;padding-left: 80px;"><strong style="color: black;">Spinosaurus Skeleton</strong></p>
+              </div>
+  
+          </div>
+
+          <div class="portfolio-description" style="background-color: rgb(255, 255, 255); padding-top: 20px;"></div>
+
+          <div style="justify-content: center;">
+            <div class=" portfolio-info" style="background-color: rgb(85,164,178); padding-top: 16px; ">
+                <img src="assets/images/bulb.png" style="width: 7%;">
+                <h3 style="color: white;">DID YOU KNOW?</h3>
+                <ul>
+                <li style="color: white; font-size: 17px;"><span>&#8226;</span> Triceratops' head was its most imposing feature. It measured 4 to 5 feet (1.2 to 1.5 meters) across and was ornamented with impressive horns and a head plate.</li>
+                <li style="color: white; font-size: 17px;"><span>&#8226;</span> It used its horns -- a short one above its mouth and two long ones above its eyes -- to charge predators, such as T. rex.</li>
+                <li style="color: white; font-size: 17px;"><span>&#8226;</span> The skull of triceratops was one-third the length of its entire body</li>
+                <li style="color: white; font-size: 17px;"><span>&#8226;</span> It lived around 65 million years ago, during what is called the Cretaceous Period.</li>
+                </ul>
+            </div>
+            <img src="assets/images/size3.PNG" style="width: 100%; padding-top: 20px;">
+         </div>
+  
+        </div>
+      </section><!-- End Details Section -->
+  
+    </main><!-- End #main -->
+    <nav class="navbar " style="background-color: rgb(255, 255, 255);">
+    </nav>
+    <nav class="navbar " style="background-color: rgb(255, 255, 255);">
+    </nav>
+    <nav class="navbar " style="background-color: rgb(255, 255, 255);">
+    </nav>
+    
+        <div> 
+            <img src="assets/images/frame.PNG" width="160" height="70">
+            <img src="assets/images/frame.PNG" width="200" height="70">
+            <img src="assets/images/frame.PNG" width="200" height="70">
+            <img src="assets/images/frame.PNG" width="200" height="70">
+            <img src="assets/images/frame.PNG" width="200" height="70">
+            <img src="assets/images/frame.PNG" width="200" height="70">
+            <img src="assets/images/frame.PNG" width="150" height="70">
+        </div>
+        
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white"> &copy; DinoKnows 2021</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</html>
